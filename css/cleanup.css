@@ -1,1 +1,38 @@
 /* write your override styles here */
+
+/* tag 1 child of Div ID Wall, w/ Class */
+#wall .tag-1 {
+    display: none;
+}
+
+/* tag 2 div child of ID Wall, w/ ID */
+#wall div#tag-2 {
+    display: none;
+}
+
+/* tag 3 div child of ID Wall, w/ ID & Class */
+#wall div#tag-3.slick.wicked {
+    display: none;
+}
+/* the space in the CLASS name is filled with a . */
+
+/* tag 4 child of Div ID Wall, in Div of Class Parent, w/ ID */
+#wall .parent div#tag-4 {
+    display: none;
+}
+
+/* tag 5 child of Div ID Wall, in Div of Class Parent, w/ ID & class */
+div#wall div.parent #tag-5.slick {
+    display: none;
+}
+
+/* tag 6 last child div of CLASS parent, of ID wall in Body */
+/* read it backwards it helps understanding */
+body div#wall div.parent div:last-child div#tag-6 {
+    display: none;
+}
+
+/* tag 7 in a Div first child of class parent, of Div ID Wall, in body */
+body div#wall div.parent div:first-child div#tag-7.slick {
+    display: none;
+}
